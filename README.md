@@ -1,4 +1,4 @@
-# lista-de-la-compra
+# Lista de la Compra
 App para realizar una lista de la compra.
 
 Esta app es un pequeño proyecto realizado con el único fin de prácticar lo aprendido recientemente en JavaScript.
