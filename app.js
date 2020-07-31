@@ -3,7 +3,7 @@
 //------------------------------------//
 
 const formularioUI = document.querySelector('#form_nuevoproducto'); // cargamos el formulario
-const listaProductosUI = document.querySelector('#listaProductos'); // cargamos la lista de la compra
+const listaProductosUI = document.querySelector('#listaProductos'); // cargamos  la lista de la compra
 let arrayProductos = []; // array donde se va a almacenar los productos que se introduzcan
 
 //------------------------------------//
