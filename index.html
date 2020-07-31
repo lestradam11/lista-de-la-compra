@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Lista de la compra avanzada">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- repositorio iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <title>Lista de la Compra</title>
+    <style>
+        /* Estilo para eliminar las flechas del input-number */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        input[type=number] { -moz-appearance:textfield; }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h2><span class="material-icons mx-3">shopping_cart</span>Lista de la compra</h2>
+        </div>
+        <form id="form_nuevoproducto">
+            <div class="form-row justify-content-center">
+                <div class="col-sm-2 my-1">
+                    <input type="number" class="form-control text-center" id="inQuantity" min="1" value="1">
+                </div>
+                <div class="col-sm-6 my-1">
+                    <input type="text" class="form-control text-center" id="inProduct" placeholder="Escribir el nuevo producto">
+                </div>
+            </div>
+            <div class="form-row my-1 justify-content-center">
+                <button type="submit" class="btn btn-outline-primary">Agregar</button>
+            </div>
+        </form>
+        <div class="dropdown-divider my-3"></div>
+        <div id="listaProductos">
+            <!-- Aqui se va a pintar la lista de la compra desde JS -->
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
